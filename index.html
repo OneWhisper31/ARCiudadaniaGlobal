@@ -9,7 +9,6 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <h1>holii</h1>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -22,8 +21,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.glb"
-                    timeout="10000"
+                    src="https://raw.githubusercontent.com/OneWhisper31/ArTest/main/assets/asset.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -31,7 +29,7 @@
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt"
+                url="https://raw.githubusercontent.com/OneWhisper31/ArTest/main/assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -49,6 +47,5 @@
 
             <a-entity camera></a-entity>
         </a-scene>
-        <h1>holii</h1>
     </body>
 </html>
