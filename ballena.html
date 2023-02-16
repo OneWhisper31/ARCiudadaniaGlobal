@@ -3,6 +3,7 @@
     <head>
         <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -25,14 +26,15 @@
       url="assets/markers/Ballena"
       smooth="true"
       smoothCount="10"
-      smoothTolerance=".01"
-      smoothThreshold="5"
-      size="0.06"
+      smoothTolerance="10"
+      smoothThreshold="50"
     >
       <a-entity
         gltf-model="assets/models/ballena.glb"
-        scale="40 40 40"
-        position="400 200 -150"
+        scale="80 80 80"
+        position="400 0 -150"
+        markerFound="true"
+        animation-mixer="clip:"
       >
       </a-entity>
     </a-nft>
