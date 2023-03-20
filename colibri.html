@@ -1,46 +1,43 @@
 <!doctype html>
 <html>
-    <head>
-        <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    </head>
 
-    <body style="margin: 0; overflow: hidden;">
-            <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
-            <div class="arjs-loader">
-              <div>Loading, please wait...</div>
-            </div>
-          
-            <a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-  >
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script
+    src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+  <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+
+  <a href="/index.html" id="mybutton"><button
+      class="btn btn-light button" onclick="" style="max-height: 4.4em; max-width: 2em; margin:2em;">
+      <p>Volver</p>
+    </button></a>
+
+  <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
-    <a-nft
-      type="nft"
-      url="assets/markers/Colibri"
-      smooth="true"
-      smoothCount="10"
-      smoothTolerance="10"
-      smoothThreshold="50"
-    >
-      <a-entity
-        gltf-model="assets/models/colibri.glb"
-        scale="40 40 40"
-        position="150 0 -150"
-        rotation="0 90 0"
-        markerFound="true"
-        animation-mixer="clip:"
-      >
+    <a-nft type="nft" url="assets/markers/Colibri" smooth="true" smoothCount="10" smoothTolerance="10"
+      smoothThreshold="50">
+      <a-entity gltf-model="assets/models/colibri.glb" scale="40 40 40" position="150 0 -150" rotation="0 90 0"
+        markerFound="true" animation-mixer="clip:">
       </a-entity>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
   </a-scene>
-    </body>
+  <script src="./index.js"></script>
+</body>
+
 </html>
