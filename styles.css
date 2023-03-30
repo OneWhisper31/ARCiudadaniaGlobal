@@ -102,6 +102,52 @@ header{
     max-width: 2em;
 }
 
+#sound {
+    position: fixed;
+    top: 0;
+    left: 92%;
+    display: none;
+    max-height: 4em; 
+    max-width: 4em; 
+    min-height: 4em; 
+    min-width: 4em;
+    margin:2em;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+}
+#sound img{
+    width: 100%;
+}
+@media (max-width: 1300px){
+
+    #sound {
+        left: 90%;
+    }
+
+}
+@media (max-width: 1000px){
+
+    #sound {
+        left: 85%;
+    }
+
+}
+@media (max-width: 700px){
+
+    #sound {
+        left: 80%;
+    }
+
+}
+@media (max-width: 500px){
+
+    #sound {
+        left: 70%;
+    }
+
+}
+
 @media (max-width: 600px){
     .column-button{
         padding: 1em 3.3em;
