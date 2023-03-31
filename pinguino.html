@@ -17,10 +17,14 @@
   <div class="arjs-loader">
     <div>Cargando, espera unos segundos...</div>
   </div>
-  <a href="/index.html" id="mybutton"><button
-      class="btn btn-light button" onclick="" style="max-height: 4.4em; max-width: 2em; margin:2em;">
-      <p>Volver</p>
-    </button></a>
+  <a href="/index.html" id="mybutton"><button class="btn btn-light button" onclick=""
+    style="max-height: 4.4em; max-width: 2em; margin:2em;">
+    <p>Volver</p>
+  </button></a>
+<button id="sound" onclick="OnSound(0)">
+  <img src="/assets/images/sound.png">
+</button>
+    <audio id="audioPlayer" loop src="./assets/sounds/pinguino.mp3"></audio>
 
   <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">

@@ -1,11 +1,14 @@
 var onSound = false;
-function OnSound() {
+const audioPlayer = document.getElementById('audioPlayer');
+
+function OnSound(_typeOfSound = 0) {
   onSound = !onSound
+  typeOfSound=_typeOfSound;
 
   var s = document.getElementById("sound");
   
   if(onSound)
-    s.style = "background-color: rgba(255, 255, 255, 1); display: inline;"
+    s.style = "background-color: #01497C; display: inline;"
   else
     s.style = "background-color: rgba(0, 0, 0, 0.6); display: inline;"
 }
@@ -23,6 +26,9 @@ window.addEventListener("arjs-nft-loaded", (event) => {
 
 window.addEventListener("markerFound", (event) => {
   if (onSound) {
-  // sonido
+    audioPlayer.play();
   }
+});
+window.addEventListener("markerLost", (event) => {
+    audioPlayer.pause();
 });
