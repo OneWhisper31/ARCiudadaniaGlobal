@@ -49,10 +49,10 @@ header {
 }
 .separator {
   list-style: none;
-  background-color: rgb(34, 33, 34);
+  background-color: rgb(240, 240, 240);
   border-radius: 2em;
   width: 30em;
-  height: 0.3em;
+  height: 0.1em;
   margin: auto;
   text-align: center;
 }
