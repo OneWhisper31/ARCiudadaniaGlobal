@@ -13,14 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSQHYHKF4B"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-RSQHYHKF4B');
-        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSQHYHKF4B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RSQHYHKF4B');
+    </script>
 </head>
 
 <body>
@@ -29,58 +29,84 @@
     </header>
     <ul class="panel">
         <li class="column" style="margin-bottom: 3em; margin-top: 0em;">
-            <h1>REALIDAD AUMENTADA <br />CON CIUDADANÍA GLOBAL</h1>
+            <h1 style="text-transform:none !important;">Biodiversidad y<br> Realidad Aumentada
+                <br /> con Ciudadanía Global
+            </h1>
             <div class="separator"></div>
+        </li>
+        <li class="column" style="display: flex; margin-bottom: 2em;">
+            <ul class="panel panel-panel">
+                <li class="column-instructions">
+                    <p>Descargá, imprimí, jugá y aprendé con los cubos de realidad aumentada de las especies en
+                        riesgo de extinción.</p>
+                </li>
+            </ul>
         </li>
         <li class="column" style="display: flex;">
             <ul class="panel panel-panel">
 
                 <li class="column">
-                    <p class="column-text">Descarga los cubos a escanear</p>
+                    <p class="column-text">Descargá el archivo con los cubos de los animales que querés observar.</p>
                 </li>
                 <li class="column">
                     <a href="https://drive.google.com/uc?id=1hhhrZlIZsWp8uCEs_kPgw01j2heRgkk1&export=download&authuser=0"
-                        target=”_blank”><button id="DownloadPDF" class="btn btn-light button" onclick="ga('send', 'event', 'Botones', 'Clic', 'DescargarPDF')">
+                        target=”_blank”><button id="DownloadPDF" class="btn btn-light button"
+                            onclick="ga('send', 'event', 'Botones', 'Clic', 'DescargarPDF')">
                             <p>Descargar</p>
                         </button></a>
                 </li>
                 <li class="column">
-                    <p class="column-text">Elegí el modelo que quieras ver, imprimilo y apunta a la imagen.</p>
+                    <p class="column-text">Elegí el animal que querés observar, imprimilo, armá el cubo doblando la
+                        hoja
+                        por las líneas punteadas y pegando los bordes.</p>
+                    <p class="column-text">Apuntá tu cámara al ícono que se encuentra en el
+                        paisaje que habita cada animal y prepárate para disfrutar una experiencia única de realidad
+                        aumentada. </p>
                 </li>
                 <li class="column">
                     <a href="/yaguarete.html" class="column-button"><button id="Yaguarete" class="btn btn-light button"
+                            style="background-color: #D78345; border-color: #a95d2e;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Yaguarete')">
-                            <p>Yaguareté</p>
+                            <img src="YAGUARETE-RA.png" style="max-width: 100%;">
                         </button></a>
                     <a href="/ballena.html" class="column-button"><button id="Ballena" class="btn btn-light button"
+                            style="background-color: #17AFDF; border-color: #018eb1;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Ballena')">
-                            <p>Ballena</p>
+                            <img src="BALLENA-RA.png" style="max-width: 100%;">
                         </button></a>
                     <a href="/pinguino.html" class="column-button"><button id="Pingüino" class="btn btn-light button"
+                            style="background-color: #AEBFCD; border-color: #92a6b1;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Pingüino')">
-                            <p>Pingüino</p>
+                            <img src="PINGUINO-RA.png" style="max-width: 100%;">
                         </button></a>
                 </li>
                 <li class="column">
                     <a href="/colibri.html" class="column-button"><button id="Colibrí" class="btn btn-light button"
+                            style="background-color: #8C69A6; border-color: #6d4392;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Colibrí')">
-                            <p>Colibrí</p>
+                            <img src="PICAFLOR-RA.png" style="max-width: 100%;">
                         </button></a>
                     <a href="/mariposa.html" class="column-button"><button id="Mariposa" class="btn btn-light button"
+                            style="background-color: #65AF49; border-color: #38a13a;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Mariposa')">
-                            <p>Mariposa</p>
+                            <img src="MARIPOSA-RA.png" style="max-width: 100%;">
                         </button></a>
                     <a href="/puma.html" class="column-button"><button id="Puma" class="btn btn-light button"
+                            style="background-color: #9E764F; border-color: #8a6241;"
                             onclick="ga('send', 'event', 'Botones', 'Clic', 'Puma')">
-                            <p>Puma</p>
+                            <img src="PUMA-RA.png" style="max-width: 100%;">
                         </button></a>
                 </li>
                 <li class="column">
-                    <p class="column-text">Tambien podes descargar la app disponible para android 8.0 o superior</p>
+                    <p class="column-text">Tambien podes descargar la app que te permitirá observar y escuchar los
+                        animales con realidad aumentada.
+                        Disponible para Android 8.0 o superior.
+                    </p>
                 </li>
                 <li class="column">
                     <a href="https://drive.google.com/uc?id=1DQu3Q2prgIWCzx28KCix6w0RIaUutRZZ&export=download&authuser=0"
-                        target=”_blank”><button id="DownloadAPP" class="btn btn-light button" onclick="ga('send', 'event', 'Botones', 'Clic', 'DescargarAPP')">
+                        target=”_blank”><button id="DownloadAPP" class="btn btn-light button"
+                            onclick="ga('send', 'event', 'Botones', 'Clic', 'DescargarAPP')">
                             <p>Descargar</p>
                         </button></a>
                 </li>

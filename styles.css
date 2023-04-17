@@ -1,7 +1,7 @@
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #2a6f97;
-  background-image: linear-gradient(to top, #2a6f97, #013a63);
+  background-color: #007DBC;
+  background-image: linear-gradient(to bottom, #007DBC, #183668);
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -12,11 +12,19 @@ body {
   background-position: center;
   background-size: cover;
   color: azure;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 150vh;
+}
+p{
+  color: #012a47;
+  text-transform: none;
 }
 header {
   /* background-color: #013A63; */
-  width: 100%;
-  height: 30%;
+  height: 10%;
   position: fixed;
 }
 .panel h1 {
@@ -38,7 +46,8 @@ header {
   /* background-color: aliceblue; */
 }
 .panel-panel {
-  padding: 1em 8em;
+  padding: 1em;
+  margin: 0em 2em;
   background-color: aliceblue;
   border-radius: 2em;
   box-shadow: 0 0 0.5em 0.5em rgba(57, 57, 57, 0.179);
@@ -63,7 +72,14 @@ header {
 }
 .column-text {
   margin: 1em auto;
-  max-width: 80%;
+  max-width: 90%;
+}
+.column-instructions{
+  padding: 1em 9em;
+  list-style: none;
+}
+.column-instructions p{
+  margin: auto;
 }
 .button {
   min-width: 7em;
@@ -73,7 +89,7 @@ header {
   margin: 1em;
   border-radius: 0.5em;
   border-color: rgba(0, 0, 0, 0.592);
-  background-color: #01497c;
+  background-color: #02558B;
   box-shadow: 0 0 0.7em 0.2em rgba(57, 57, 57, 0.179);
 }
 .button:hover {
@@ -153,6 +169,12 @@ header {
   #sound {
     left: 80%;
   }
+  .column-instructions{
+    padding: 0.8em 1em;
+  }
+  p{
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 500px) {
   #sound {
@@ -162,24 +184,40 @@ header {
 
 @media (max-width: 600px) {
   .column-button {
-    padding: 1em 3.3em;
+    padding: 0.8em 3.3em;
   }
   
 }
 @media (max-width: 900px) {
   .panel {
     text-decoration: none;
-    padding: 3em 0;
+    padding: 1em 0;
   }
   header {
-    position: inherit;
+    display: flex;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .logo{
+    margin: auto;
+    height: 5em;
+    width: fit-content;
   }
 }
 @media (max-width: 1000px) {
-  .panel-panel {
-    margin: 0em 2em;
-   }
    .separator {
     width: 20em;
    }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
