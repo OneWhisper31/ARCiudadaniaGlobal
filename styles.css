@@ -1,7 +1,7 @@
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #007DBC;
-  background-image: linear-gradient(to bottom, #007DBC, #183668);
+  background-color: #007dbc;
+  background-image: linear-gradient(to bottom, #007dbc, #183668);
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -14,18 +14,20 @@ body {
   color: azure;
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 150vh;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 150vh;
 }
-p{
+p {
   color: #012a47;
   text-transform: none;
 }
 header {
   /* background-color: #013A63; */
-  height: 10%;
-  position: fixed;
+  /* height: 10%; */
+  display: flex;
+  position: relative;
+  margin-top: 3em;
 }
 .panel h1 {
   text-align: center;
@@ -35,9 +37,9 @@ header {
   text-shadow: 0.2em;
 }
 .logo {
-  width: 10%;
-  padding: 1%;
-  min-width: 10em;
+  /* min-width: 10em; */
+  max-width: 20em;
+  margin: auto;
 }
 
 .panel {
@@ -70,15 +72,20 @@ header {
   justify-content: center;
   list-style-type: none;
 }
+.column-description{
+  padding: 0!important;
+  padding-top:2% !important;
+}
 .column-text {
   margin: 1em auto;
   max-width: 90%;
+  width: 67em;
 }
-.column-instructions{
+.column-instructions {
   padding: 1em 9em;
   list-style: none;
 }
-.column-instructions p{
+.column-instructions p {
   margin: auto;
 }
 .button {
@@ -89,7 +96,7 @@ header {
   margin: 1em;
   border-radius: 0.5em;
   border-color: rgba(0, 0, 0, 0.592);
-  background-color: #02558B;
+  background-color: #02558b;
   box-shadow: 0 0 0.7em 0.2em rgba(57, 57, 57, 0.179);
 }
 .button:hover {
@@ -155,9 +162,28 @@ header {
 #sound img {
   width: 100%;
 }
+.images{
+  position: absolute;
+  padding-top: 20em;
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.images img{
+  min-width: 20%;
+  max-width: 20%;
+}
+/* .images img:nth-child(1){
+}
+.images img:nth-child(2){
+} */
 @media (max-width: 1300px) {
   #sound {
     left: 90%;
+  }
+  .column-text{
+    width: auto;
   }
 }
 @media (max-width: 1000px) {
@@ -169,10 +195,10 @@ header {
   #sound {
     left: 80%;
   }
-  .column-instructions{
+  .column-instructions {
     padding: 0.8em 1em;
   }
-  p{
+  p {
     font-size: 0.8em;
   }
 }
@@ -186,7 +212,6 @@ header {
   .column-button {
     padding: 0.8em 3.3em;
   }
-  
 }
 @media (max-width: 900px) {
   .panel {
@@ -199,25 +224,28 @@ header {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-  .logo{
+  .logo {
     margin: auto;
     height: 5em;
     width: fit-content;
   }
 }
 @media (max-width: 1000px) {
-   .separator {
+  .separator {
     width: 20em;
-   }
+  }
+  .images{
+    display: none;
+  }
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

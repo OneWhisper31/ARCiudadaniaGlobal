@@ -23,7 +23,6 @@ window.addEventListener("arjs-nft-loaded", (event) => {
   // document.appendChild(d + s)
 });
 
-
 window.addEventListener("markerFound", (event) => {
   if (onSound) {
     audioPlayer.play();
